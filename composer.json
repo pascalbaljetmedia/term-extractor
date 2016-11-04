@@ -1,9 +1,9 @@
 {
-	"name": "robholmes/term-extractor",
+	"name": "pascalbaljetmedia/term-extractor",
 	"type": "library",
 	"description": "Term Extractor - a PHP port of Topia's Term Extractor",
 	"keywords": ["term extraction","keyword extraction","term extractor","tagger","tagging","extraction","tag","text"],
-	"homepage": "http://github.com/robholmes/term-extractor",
+	"homepage": "http://github.com/pascalbaljetmedia/term-extractor",
 	"license": ["GPL-3.0+","ZPL-2.1"],
 	"authors": [
 	{
@@ -36,6 +36,11 @@
 		"name": "Rob Holmes",
 		"homepage": "http://robholmes.net/",
 		"role": "Developer (updates to PHP port for PHP 5.3+)"
+	},
+	{
+		"name": "Pascal Baljet",
+		"homepage": "https://pascalbaljetmedia.com/",
+		"role": "Developer (added v1.0 tag)"
 	}
 	],
 	"require": {
