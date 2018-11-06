@@ -30,16 +30,24 @@ class TermExtractor {
 	const SEARCH = 0;
 	const NOUN = 1;
 
-	public $tagger;
-	public $filter;
+	protected $tagger;
+	protected $filter;
 
 	public function __construct(Tagger $tagger = null, FilterInterface $filter = null) {
+		$this->setTagger($tagger);
+		$this->setFilter($filter);
+	}
+	
+	public function setTagger(Tagger $tagger = null) {
 		if ($tagger === null) {
 			$this->tagger = new Tagger();
 			$this->tagger->initialize();
 		} else {
 			$this->tagger = $tagger;
 		}
+	}
+	
+	public function setFilter(FilterInterface $filter = null) {
 		if ($filter === null) {
 			$this->filter = new DefaultFilter();
 		} else {
